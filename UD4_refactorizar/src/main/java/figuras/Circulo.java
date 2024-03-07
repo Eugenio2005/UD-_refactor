@@ -2,6 +2,8 @@ package figuras;
 
 public class Circulo {
 
+    private double rad;
+
     /**
      * @return the rad
      */
