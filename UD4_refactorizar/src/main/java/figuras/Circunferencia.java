@@ -23,17 +23,13 @@ public class Circunferencia {
     public Circunferencia(double radio) {
         this.radio = radio;
     }
-    public double calculaArea (){
-        double area = 2 * PI * getRadio() * getRadio();
-        
-        return area; 
-    }
     
     public void imprimir() {
         color = "rojo";
         System.out.println("Di�metro: " + 2 * getRadio());
         System.out.println("Color: " + color);
-        System.out.println(calculaArea());
+        double area = 2 * PI * getRadio() * getRadio();
+        System.out.println(area);
     }
 
     public boolean esIgual(boolean considerarDecimales, Circunferencia otro) {
